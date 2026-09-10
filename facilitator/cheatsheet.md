@@ -13,10 +13,14 @@ git pull origin master - pull changes from github at master
 git checkout -b new-branch - create a new branch       
 git status - check status of changes on the current branch        
 git log - log of all the previous changes with commit messages and commit hashes     
-git checkout *commit hash* - go back to the (good ol') old commit    
+git checkout *commit hash* - go back to the (good ol') old commit
+git switch -c new-branch - create and switch to a new branch
+git branch -a - list all local and remote branches
+git merge new-branch -- merge the branch named new-branch into current branch
 ```
 
 # ADVANCED:
 
 ```
+
 ```
