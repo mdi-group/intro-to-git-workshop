@@ -1,8 +1,8 @@
-# Slide-to-repository map
+# Tutorial slide map
 
-Aligned with [Intro to Git and GitHub](https://docs.google.com/presentation/d/1WVP2jXtZ6T27f7jYtcZTL6g7SZoaP3Ztb5sT68hHxsc/edit) on 11 September 2026. Numbers refer to the deck’s physical slide order. Slides 44–48 are skipped authoring assets; slide 49 is the final acknowledgement slide.
+This page maps [Intro to Git and GitHub](https://docs.google.com/presentation/d/1WVP2jXtZ6T27f7jYtcZTL6g7SZoaP3Ztb5sT68hHxsc/edit) to the tutorial material. Numbers refer to the deck’s physical slide order.
 
-## Teaching sequence
+## Tutorial sequence
 
 | Slides | Content | Repository material |
 | --- | --- | --- |
@@ -16,25 +16,25 @@ Aligned with [Intro to Git and GitHub](https://docs.google.com/presentation/d/1W
 | 23–28 | Push concept, authentication, fork, clone, remotes, Practice 3 | [GitHub and remotes](../workshop/03-github-and-remotes.md) |
 | 29–34 | Update main, branch, unique file, switching, push, merge graph | [Branches and pull requests](../workshop/04-branches-and-pull-requests.md) |
 | 35–37 | Browser PR, Practice 4, update local main after merging | [Branches and pull requests](../workshop/04-branches-and-pull-requests.md) |
-| 38–40 | Two-PR conflict demonstration and resolution | [Learner explanation](../workshop/05-conflicts.md), [presenter script](conflict-demo.md) |
+| 38–40 | Two-PR conflict demonstration and resolution | [Conflict instructions](../workshop/05-conflicts.md), [demonstration notes](conflict-demo.md) |
 | 41 | Research files, data and reproducibility | [Research projects](../workshop/06-research-projects.md) |
 | 42–43 | Retrieval recap and applying Git to your own work | [Recap](../workshop/07-recap.md) |
 | 49 | Acknowledgements | [Acknowledgements](../workshop/acknowledgements.md) |
 
-The graph introduction is slide 29; updating local main follows on slide 30. The repository chapter explains the graph before its update commands. All practicals are individual follow-along activities. The checkout and conflict sections are presenter demonstrations; learners can inspect the supplied explanations without making extra commits.
+The commit graph appears before the commands that update local `main`. Each practical can be followed individually. The checkout and conflict sections are demonstrations; participants can read the explanations without making extra commits.
 
-## The four checkpoints
+## Tutorial checkpoints
 
 | Practice | End state |
 | --- | --- |
 | 1 | In `aichemy-notes`, three commits: introduce notes, dataset version, analysis settings |
 | 2 | Five commits after the data-source and ready-status commits; clean `main`; committed file ends with `Status: ready.` |
-| 3 | In the separate `intro-to-git-workshop` clone; `origin` is the learner’s fork, `upstream` is mdi-group; clean `main` |
-| 4 | One PR from the learner’s `participant/YOUR-USERNAME` branch to workshop `main`, adding only `participants/YOUR-USERNAME.md` |
+| 3 | In the separate `intro-to-git-workshop` clone; `origin` is the participant’s fork, `upstream` is mdi-group; clean `main` |
+| 4 | One PR from the participant’s `participant/YOUR-USERNAME` branch to tutorial `main`, adding only `participants/YOUR-USERNAME.md` |
 
 ## Exact local commit sequence
 
-Use these messages in the demonstrations so the example logs and instructions agree:
+Use these messages in the local tutorial exercise:
 
 1. `Introduce the research notes`
 2. `Record the dataset version`
@@ -42,7 +42,7 @@ Use these messages in the demonstrations so the example logs and instructions ag
 4. `Record the dataset source`
 5. `Mark the notes ready`
 
-Hashes shown on the slides are examples. Use the current repository’s own identifiers. The history exercise selects the commit that added `and source`; checkout inspects the earlier analysis-settings commit, then returns to `main`.
+Hashes shown on the slides are examples. Use identifiers from your own log. The history exercise selects the commit that added `and source`; checkout inspects the analysis-settings commit, then returns to `main`.
 
 At the end of Practice 2, `git show HEAD:index.md` contains:
 
@@ -56,16 +56,8 @@ Record the analysis settings.
 Status: ready.
 ```
 
-Extra blank lines from editing do not change the learning outcome; they may change the displayed insertion counts.
-
 ## Keep the two repository contexts separate
 
-The local notes repository is not submitted to GitHub. Leave it on clean `main`, then clone the workshop fork alongside it. The participant exercise changes only the learner’s own file. The controlled conflict uses `conflict-demo/status.txt` in a presenter fork clone.
+The local notes repository is not submitted to GitHub. Leave it on clean `main`, then clone the tutorial fork alongside it. The participant exercise changes only the participant’s own file. The controlled conflict uses `conflict-demo/status.txt` in the fork clone.
 
 Both PRs in the conflict demonstration begin from `Workshop mode: open.`. Merge the reviewing PR first, then on `conflict-demo` fetch and merge `upstream/main`. This produces the marker direction shown in the slides. The agreed resolution is `Workshop mode: reviewing and merging.`.
-
-## Alignment review
-
-The repository update fixes the command-reference link, aligns commit messages and practice numbering, adds status/log/push output, explains hashes and detached checkout, uses the same browser PR route, and adds the recap. The presenter conflict script now uses two fork-based PRs and `upstream/main`. Unrequested branch deletion has been removed from the core exercise and the corresponding slide note.
-
-Prakriti’s existing participant file, the licence and the starting conflict fixture are preserved unchanged. Additional research guidance and troubleshooting are available for later reading; they do not add required exercises to the class.

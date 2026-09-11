@@ -12,7 +12,7 @@ flowchart RL
     B --> A[Commit A]
 ```
 
-Arrows from commits point back to parents. These are conceptual labels, not hashes to type. Some repositories use `master` or another default branch name. This workshop uses `main`.
+Arrows from commits point back to parents. These are conceptual labels, not hashes to type. Some repositories use `master` or another default branch name. This tutorial uses `main`.
 
 ## Update local main before branching
 
@@ -25,7 +25,7 @@ git fetch upstream
 git merge --ff-only upstream/main
 ```
 
-If there are no updates, Git prints `Already up to date.`. Otherwise it reports a fast-forward and the changed files. If histories have diverged, stop and ask a facilitator; `--ff-only` refuses to create a merge commit here.
+If there are no updates, Git prints `Already up to date.`. Otherwise it reports a fast-forward and the changed files. If the histories have diverged, stop and ask for help; `--ff-only` refuses to create a merge commit here.
 
 ## Create a branch and one unique file
 
@@ -50,7 +50,7 @@ GitHub: @YOUR-USERNAME
 One useful Git habit: Run git status before deciding what to do next.
 ```
 
-If your file already exists on `main` from an earlier attempt, ask the facilitator before repeating the exercise. Never overwrite another person’s file.
+If the file already exists on `main`, ask for help before continuing. Never overwrite another person’s file.
 
 Save, inspect and commit:
 
@@ -58,7 +58,7 @@ Save, inspect and commit:
 git status
 git add participants/YOUR-USERNAME.md
 git diff --staged
-git commit -m "Add YOUR-USERNAME workshop note"
+git commit -m "Add YOUR-USERNAME tutorial note"
 git status
 ```
 
@@ -72,9 +72,9 @@ After the new commit, only the current branch moves forward:
 flowchart TB
     H[HEAD] --> P[participant/YOUR-USERNAME]
     P --> C[New participant commit]
-    C --> B[Previous commit]
+    C --> B[Shared commit]
     M[main] --> B
-    B --> A[Earlier commit]
+    B --> A[Original commit]
 ```
 
 Run:
@@ -112,19 +112,19 @@ This compares your branch with its common ancestor with `upstream/main` and shou
 
 ## What a merge joins
 
-A presenter will review and merge selected pull requests. In this conceptual example, both the workshop branch and participant branch advanced from A. A merge commit M records both parents:
+A pull request can be reviewed and merged during the tutorial. In this conceptual example, both the source branch and participant branch advanced from A. A merge commit M records both parents:
 
 ```mermaid
 flowchart TB
     H[HEAD] --> N[main]
     N --> M[Merge M]
-    M --> B[Workshop commit B]
+    M --> B[Source commit B]
     M --> C[Participant commit C]
     B --> A[Shared ancestor A]
     C --> A
 ```
 
-This illustrates **Create a merge commit**. GitHub’s squash and rebase options produce different history; the presenter will identify the chosen option.
+This illustrates **Create a merge commit**. GitHub’s squash and rebase options produce different history.
 
 ## Open the pull request on GitHub
 
@@ -133,7 +133,7 @@ This illustrates **Create a merge commit**. GitHub’s squash and rebase options
 3. Set the base repository to `mdi-group/intro-to-git-workshop`, branch `main`.
 4. Set the head repository to your personal fork and compare branch to `participant/YOUR-USERNAME`.
 5. Review the diff. Only your participant file should appear.
-6. Choose **Create pull request**, enter the title `Add YOUR-USERNAME workshop note` and a short description of your Git habit, then submit with **Create pull request**.
+6. Choose **Create pull request**, enter the title `Add YOUR-USERNAME tutorial note` and a short description of your Git habit, then submit with **Create pull request**.
 
 GitHub labels can vary slightly. The base and head values above determine the destination and source. Review the **Files changed** tab after submission. A new commit pushed to the same branch updates this pull request.
 
@@ -152,4 +152,4 @@ git switch main
 git pull --ff-only upstream main
 ```
 
-Open your participant file to confirm the merged contribution arrived. This updates local `main`; it does not push `main` to your fork. Keep the participant branch during the workshop. Branch deletion is optional later, and `git branch -d` can refuse after a squash merge even though the file was merged.
+Open your participant file to confirm the merged contribution arrived. This updates local `main`; it does not push `main` to your fork. Keep the participant branch during the tutorial. Branch deletion is optional, and `git branch -d` can refuse after a squash merge even though the file was merged.

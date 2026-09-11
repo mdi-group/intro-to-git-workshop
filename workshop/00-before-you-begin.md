@@ -11,7 +11,7 @@ gh --version
 
 Open a plain-text editor and sign in to your GitHub account in a browser.
 
-The class configures commit identity after creating the local repository, then authenticates when the GitHub section begins. These checks can also be completed in advance.
+Configure your commit identity after creating the local repository. Authenticate when the GitHub section begins. You can also complete these checks before the tutorial.
 
 ## Configure your commit identity
 
@@ -43,7 +43,7 @@ gh auth status
 
 Choose GitHub.com, HTTPS and browser sign-in when prompted. Check the account shown by `gh auth status`.
 
-Never paste an access token, password or authentication code into a workshop chat, issue or shared document.
+Do not share an access token, password or authentication code in chat, issues or shared documents.
 
 ## A useful habit
 

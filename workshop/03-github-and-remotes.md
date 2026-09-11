@@ -9,12 +9,12 @@ Git commits are local. A remote is another repository that can exchange commits 
 - `git merge` integrates another branch into the current branch;
 - `git pull` fetches and then integrates.
 
-For the class exercise, the two remotes have distinct roles:
+For this tutorial exercise, the two remotes have distinct roles:
 
 | Remote | Points to | Used for |
 | --- | --- | --- |
 | `origin` | your fork | pushing your branches |
-| `upstream` | `mdi-group/intro-to-git-workshop` | fetching workshop updates; this repository is also the PR destination on GitHub |
+| `upstream` | `mdi-group/intro-to-git-workshop` | fetching updates from the tutorial repository; this repository is also the PR destination on GitHub |
 
 ## Authenticate for HTTPS
 
@@ -26,7 +26,7 @@ gh auth status
 
 Choose GitHub.com, HTTPS and browser sign-in. Confirm that the account shown owns your fork.
 
-## Fork the workshop repository
+## Fork the tutorial repository
 
 Open [mdi-group/intro-to-git-workshop](https://github.com/mdi-group/intro-to-git-workshop), choose **Fork**, then create the fork under your account.
 
@@ -34,7 +34,7 @@ If you already have a fork, use it. GitHub may show a **Sync fork** option if it
 
 ## Clone your fork
 
-Start outside `aichemy-notes`. If you are still inside it, `cd ..` below moves to its parent. If you are already outside it, omit that line. Copy your fork’s **Code → HTTPS** URL, or replace `YOUR-USERNAME` in the example:
+Start outside `aichemy-notes`. If you are inside it, `cd ..` below moves to its parent. If you are outside it, omit that line. Copy your fork’s **Code → HTTPS** URL, or replace `YOUR-USERNAME` in the example:
 
 ```console
 cd ..
@@ -76,4 +76,4 @@ These URLs have no credentials in them. Checkpoint:
 | Clone | a local repository and working files | your laptop |
 | Branch | a movable name pointing to a commit | a repository |
 
-Continue to [Branches and pull requests](04-branches-and-pull-requests.md) to explore the commit graph and update local `main` before branching.
+Continue to [Branches and pull requests](04-branches-and-pull-requests.md) to explore the commit graph and update local `main` before creating your branch.

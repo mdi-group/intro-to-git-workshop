@@ -1,6 +1,6 @@
 # Acknowledgements and further practice
 
-The workshop structure and core exercises are adapted from [Library Carpentry's Introduction to Git](https://librarycarpentry.github.io/lc-git/index.html), released under CC BY 4.0.
+The tutorial structure and core exercises are adapted from [Library Carpentry's Introduction to Git](https://librarycarpentry.github.io/lc-git/index.html), released under CC BY 4.0.
 
 Other examples and extensions were informed by:
 

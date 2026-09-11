@@ -1,6 +1,6 @@
 # Local version control
 
-This practical builds a small repository called `aichemy-notes`.
+This tutorial section builds a small repository called `aichemy-notes`.
 
 ## 1. Create the repository
 
@@ -11,7 +11,7 @@ git init -b main
 git status
 ```
 
-Git stores repository history and configuration inside the hidden `.git/` directory. Do not edit files inside `.git/` during the workshop.
+Git stores repository history and configuration inside the hidden `.git/` directory. Do not edit files inside `.git/` during the tutorial.
 
 Expected state:
 

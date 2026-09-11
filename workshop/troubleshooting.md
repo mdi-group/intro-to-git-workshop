@@ -8,7 +8,7 @@ git branch --show-current
 git remote -v
 ```
 
-Do not force-push or delete `.git/` while diagnosing a workshop problem.
+Do not force-push or delete `.git/` while diagnosing a tutorial problem.
 
 ## `not a git repository`
 
@@ -23,7 +23,7 @@ On Windows Git Bash, use the same commands. Enter the repository directory with 
 
 ## `destination path ... already exists`
 
-Do not clone over an existing directory. Inspect it first. If it is an earlier workshop clone, enter it and run `git status`. Otherwise choose a new destination name:
+Do not clone over an existing directory. Inspect it first. If it is a clone for this tutorial, enter it and run `git status`. Otherwise choose a new destination name:
 
 ```console
 git clone URL intro-to-git-workshop-fresh
@@ -37,7 +37,7 @@ A clone already has an `origin`. Inspect it:
 git remote -v
 ```
 
-For the class workflow, add the source repository as `upstream`, not as another `origin`.
+For the tutorial workflow, add the source repository as `upstream`, not as another `origin`.
 
 ## Authentication failed
 
@@ -59,7 +59,7 @@ git remote -v
 git status
 ```
 
-For the class exercise, push the participant branch to your fork:
+For the tutorial exercise, push the participant branch to your fork:
 
 ```console
 git push -u origin participant/YOUR-USERNAME
@@ -69,15 +69,15 @@ Do not force-push to `main`.
 
 ## Detached HEAD after inspecting history
 
-If you only inspected the old snapshot and made no edits, run `git checkout main`. If you started new work there, create a branch with `git switch -c saved-work` before leaving and ask a facilitator to help preserve it.
+If you only inspected the selected snapshot and made no edits, run `git checkout main`. If you started new work there, create a branch with `git switch -c saved-work` before leaving and ask for help preserving it.
 
 ## Participant branch or file already exists
 
-You may already have completed part of the exercise. Inspect `git branch`, `git status` and the existing file before creating anything. Reuse your own unfinished branch when appropriate; do not overwrite another participant’s work.
+If a participant branch or file is present, inspect `git branch`, `git status` and the file before creating anything. Continue on your own branch when it contains your work; do not overwrite another participant’s work.
 
 ## Fast-forward update refused
 
-Local `main` and workshop `main` may have different commits. Keep both histories and ask a facilitator to inspect them. Do not force-push or reset to make the message disappear.
+Local `main` and `upstream/main` may have different commits. Keep both histories and ask for help inspecting them. Do not force-push or reset to make the message disappear.
 
 ## Git opened a pager
 
@@ -104,4 +104,4 @@ git diff upstream/main...HEAD
 git log --oneline upstream/main..HEAD
 ```
 
-Ask a facilitator before rewriting or deleting commits. Preserve the branch until the cause is understood.
+Ask for help before rewriting or deleting commits. Preserve the branch until the cause is understood.

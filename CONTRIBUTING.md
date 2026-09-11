@@ -1,6 +1,6 @@
 # Contributing
 
-Workshop participants should follow the class pull-request exercise in [`workshop/04-branches-and-pull-requests.md`](workshop/04-branches-and-pull-requests.md).
+Tutorial participants should follow the pull-request exercise in [`workshop/04-branches-and-pull-requests.md`](workshop/04-branches-and-pull-requests.md).
 
 ## Participant contributions
 
@@ -20,6 +20,6 @@ git diff upstream/main...HEAD
 
 Check that the diff contains only the contribution you intended to make.
 
-## Changes to the workshop material
+## Changes to the tutorial material
 
 For corrections or additions outside `participants/`, open an issue first. Explain the problem, the proposed change and how you checked it. Keep each pull request focused on one topic.

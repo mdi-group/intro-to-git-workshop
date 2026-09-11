@@ -1,6 +1,6 @@
-# Controlled conflict demonstration
+# Conflict demonstration
 
-Use a presenter’s fork clone with `origin` pointing to that fork and `upstream` to `mdi-group/intro-to-git-workshop`. This matches the slides and learner remote names. The presenter needs permission to merge pull requests into the workshop repository. Keep all participant files untouched.
+Prepare the demonstration in a fork clone with `origin` pointing to that fork and `upstream` to `mdi-group/intro-to-git-workshop`. The GitHub account used for the demonstration needs permission to merge pull requests into the tutorial repository. Keep all participant files untouched.
 
 ## 1. Start both branches from the same commit
 
@@ -19,7 +19,7 @@ Confirm that `conflict-demo/status.txt` contains exactly:
 Workshop mode: open.
 ```
 
-If a previous session changed it, restore this line through a normal reviewed commit on the workshop repository, then fetch and fast-forward before continuing. Preserve any old demo branches under different names before reusing these names.
+If the file does not contain this line, restore it through a normal reviewed commit on the tutorial repository, then fetch and fast-forward before continuing.
 
 ## 2. Open the first pull request
 
@@ -35,7 +35,7 @@ git commit -m "Set workshop mode to reviewing"
 git push -u origin conflict-reviewing
 ```
 
-Open a browser pull request from your fork’s `conflict-reviewing` to the workshop repository’s `main`. Leave it open for now.
+Open a browser pull request from your fork’s `conflict-reviewing` to the tutorial repository’s `main`. Leave it open for now.
 
 ## 3. Open the competing pull request
 
@@ -54,13 +54,13 @@ git commit -m "Set workshop mode to merging"
 git push -u origin conflict-demo
 ```
 
-Open the second pull request from your fork’s `conflict-demo` to workshop `main`.
+Open the second pull request from your fork’s `conflict-demo` to the tutorial repository’s `main`.
 
 ## 4. Merge the first PR and show the conflict
 
 In GitHub, review and merge the `conflict-reviewing` pull request. Refresh the `conflict-demo` pull request: it now conflicts with `main`.
 
-Back in the presenter fork clone:
+Back in the fork clone:
 
 ```console
 git switch conflict-demo
@@ -96,11 +96,11 @@ Save, inspect and finish:
 git add conflict-demo/status.txt
 git diff --staged
 git status
-git commit -m "Resolve the workshop conflict"
+git commit -m "Resolve the tutorial conflict"
 git push origin conflict-demo
 ```
 
-Refresh the existing PR and show the cleared conflict. Inspect the two-parent resolution commit:
+Refresh the pull request and show the cleared conflict. Inspect the two-parent resolution commit:
 
 ```console
 git log --oneline --graph --decorate --all
@@ -108,4 +108,4 @@ git log --oneline --graph --decorate --all
 
 Review the final diff before merging. If you need to abandon the unresolved demonstration, `git merge --abort` is available before the resolution commit; start from a clean working tree so it can restore that state.
 
-After the session, reset the fixture to `Workshop mode: open.` with a normal new commit or PR before preparing another run. Do not rewrite workshop history.
+Finish with the fixture on the tutorial repository’s `main` set to `Workshop mode: open.` Use a normal new commit or pull request; do not rewrite history.

@@ -35,7 +35,7 @@ git diff
 git diff --staged
 ```
 
-Check generated notebooks and figures carefully. Notebook outputs can create large or noisy diffs, so agree as a group whether outputs are committed.
+Check generated notebooks and figures carefully. Notebook outputs can create large or noisy diffs, so decide whether to commit them.
 
 ## A practical repository structure
 

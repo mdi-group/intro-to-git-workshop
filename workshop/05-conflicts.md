@@ -2,7 +2,7 @@
 
 Git can combine changes made in different files and many changes made in different parts of one file. It stops when it cannot choose safely between competing edits.
 
-## The workshop example
+## The tutorial example
 
 Both branches start with:
 
@@ -22,11 +22,11 @@ Workshop mode: reviewing.
 Workshop mode: merging.
 ```
 
-The participant pull requests use unique files, so they should not create this conflict. The facilitators prepare this example separately.
+The participant pull requests use unique files, so they should not create this conflict. This file is used for the tutorial’s conflict demonstration.
 
 ## Read the conflict
 
-Watch the presenter run these commands from a clean `conflict-demo` branch in their fork clone:
+During the conflict demonstration, run these commands from a clean `conflict-demo` branch in your fork clone:
 
 ```console
 git fetch upstream
@@ -44,7 +44,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 The short status is `UU conflict-demo/status.txt`: both sides changed the file and it is unmerged. There is no completed merge commit yet.
 
-After merging the latest `main` into `conflict-demo`, the file contains markers similar to these:
+After merging `upstream/main` into `conflict-demo`, the file contains markers similar to these:
 
 ```text
 <<<<<<< HEAD
@@ -54,7 +54,7 @@ Workshop mode: reviewing.
 >>>>>>> upstream/main
 ```
 
-The marker block shows both versions. Decide what the file should say, then replace the entire marked block. For the demonstration, use:
+The marker block shows both versions. Decide what the file should say, then replace the entire marked block with:
 
 ```text
 Workshop mode: reviewing and merging.
@@ -66,11 +66,11 @@ Remove every marker line, save the file and finish the merge:
 git add conflict-demo/status.txt
 git diff --staged
 git status
-git commit -m "Resolve the workshop conflict"
+git commit -m "Resolve the tutorial conflict"
 git push origin conflict-demo
 ```
 
-GitHub updates the existing pull request after the push.
+GitHub updates the pull request after the push.
 
 ## Inspect the joined history
 

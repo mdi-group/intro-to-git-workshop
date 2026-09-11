@@ -114,7 +114,7 @@ Your latest committed file is back. The modern equivalents are `git switch --det
 
 ## Choose the recovery command carefully
 
-These are separate options to discuss, not a sequence to run. Finish the local section on clean `main`.
+Choose the command that matches your situation. Use one option at a time and finish this section on a clean `main`.
 
 | Situation | Command | Effect |
 | --- | --- | --- |
@@ -124,4 +124,4 @@ These are separate options to discuss, not a sequence to run. Finish the local s
 
 Inspect `git status` and `git diff` before using `git restore index.md`. That command discards unstaged work.
 
-Avoid `git reset --hard` in this workshop. It can discard commits and saved work, and it is unnecessary for these exercises.
+Avoid `git reset --hard` in this tutorial. It can discard commits and saved work, and it is unnecessary for these exercises.

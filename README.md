@@ -1,10 +1,10 @@
-# Introduction to Git and GitHub
+# Introduction to Git and GitHub tutorial
 
-Materials for the AIChemy × LIV.INNO Data Science School at the University of Liverpool, 14 September 2026.
+A two-hour Git and GitHub tutorial for the AIChemy × LIV.INNO Data Science School at the University of Liverpool, 14 September 2026.
 
-Delivered by Prakriti Kayastha and Bradley Martin (UCL). Work individually on your own laptop, following the demonstrations.
+Work through the practicals individually on your own laptop.
 
-This repository accompanies the two-hour practical session. The workshop starts with a small local repository, then uses this repository for forks, branches and pull requests.
+Start with a small local repository, then use GitHub for forks, branches and pull requests.
 
 <p align="center">
   <img width="330" height="478" alt="git" src="https://github.com/user-attachments/assets/85e74292-3d8f-4222-8c81-9d78a43885b6" />
@@ -22,7 +22,7 @@ This repository accompanies the two-hour practical session. The workshop starts 
 - resolve a merge conflict;
 - apply the workflow to research projects.
 
-## Before the workshop
+## Before the tutorial
 
 You need:
 
@@ -41,7 +41,7 @@ gh --version
 
 If both commands print a version, continue to [Before you begin](workshop/00-before-you-begin.md).
 
-## Workshop route
+## Tutorial route
 
 1. [Before you begin](workshop/00-before-you-begin.md)
 2. [Local version control](workshop/01-local-version-control.md)
@@ -54,11 +54,11 @@ If both commands print a version, continue to [Before you begin](workshop/00-bef
 
 Keep the [command reference](workshop/cheatsheet.md) and [troubleshooting guide](workshop/troubleshooting.md) open during the practicals.
 
-## Class pull-request exercise
+## Tutorial pull-request exercise
 
-Each participant adds one uniquely named file under [`participants/`](participants/README.md). The file name and branch name use your GitHub username, which keeps the class submissions separate.
+Each participant adds one uniquely named file under [`participants/`](participants/README.md). The file name and branch name use your GitHub username, which keeps the tutorial submissions separate.
 
-The destination repository is:
+The tutorial repository is:
 
 ```text
 https://github.com/mdi-group/intro-to-git-workshop
@@ -66,13 +66,13 @@ https://github.com/mdi-group/intro-to-git-workshop
 
 The complete route is in [Branches and pull requests](workshop/04-branches-and-pull-requests.md).
 
-## Slides
+## Tutorial slides
 
-The workshop slides are available in [Intro to Git and GitHub](https://docs.google.com/presentation/d/1WVP2jXtZ6T27f7jYtcZTL6g7SZoaP3Ztb5sT68hHxsc/edit).
+The tutorial slides are available in [Intro to Git and GitHub](https://docs.google.com/presentation/d/1WVP2jXtZ6T27f7jYtcZTL6g7SZoaP3Ztb5sT68hHxsc/edit).
 
-## Facilitators
+## More tutorial material
 
-Preparation notes, checkpoints and the controlled conflict demonstration are under [`facilitator/`](facilitator/README.md). The [slide-to-repo map](facilitator/slide-map.md) records the matching practicals and expected states.
+The controlled-conflict instructions and slide map are in [`facilitator/`](facilitator/README.md).
 
 ## Licence and acknowledgements
 
