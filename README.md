@@ -4,9 +4,9 @@ Materials for the AIChemy workshop at the University of Liverpool.
 
 This repository accompanies the two-hour practical session. The workshop starts with a small local repository, then uses this repository for forks, branches and pull requests.
 
-
-<img width="330" height="478" alt="git" src="https://github.com/user-attachments/assets/85e74292-3d8f-4222-8c81-9d78a43885b6" />
-
+<p align="center">
+  <img width="330" height="478" alt="git" src="https://github.com/user-attachments/assets/85e74292-3d8f-4222-8c81-9d78a43885b6" />
+</p>
 
 ## What you will practise
 
