@@ -10,9 +10,7 @@ Use this template:
 
 ```markdown
 # Your name
-
 GitHub: @YOUR-USERNAME
-
 One useful Git habit: Write your own short sentence here.
 ```
 

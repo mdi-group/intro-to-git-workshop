@@ -26,6 +26,24 @@ The participant pull requests use unique files, so they should not create this c
 
 ## Read the conflict
 
+Watch the presenter run these commands from a clean `conflict-demo` branch in their fork clone:
+
+```console
+git fetch upstream
+git merge upstream/main
+git status --short
+```
+
+Relevant output:
+
+```text
+Auto-merging conflict-demo/status.txt
+CONFLICT (content): Merge conflict in conflict-demo/status.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+The short status is `UU conflict-demo/status.txt`: both sides changed the file and it is unmerged. There is no completed merge commit yet.
+
 After merging the latest `main` into `conflict-demo`, the file contains markers similar to these:
 
 ```text
@@ -49,7 +67,7 @@ git add conflict-demo/status.txt
 git diff --staged
 git status
 git commit -m "Resolve the workshop conflict"
-git push
+git push origin conflict-demo
 ```
 
 GitHub updates the existing pull request after the push.

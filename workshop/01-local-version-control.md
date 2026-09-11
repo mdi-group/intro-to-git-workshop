@@ -20,13 +20,14 @@ On branch main
 No commits yet
 ```
 
+Before your first commit, configure your name and email as shown in [Before you begin](00-before-you-begin.md).
+
 ## 2. Create the first file
 
 Create `index.md` in your editor:
 
 ```markdown
 # AIChemy research notes
-
 Topic: reproducible analysis.
 ```
 
@@ -36,6 +37,13 @@ Save the file, then run:
 git status
 ```
 
+Relevant output (Git may include extra hints):
+
+```text
+Untracked files:
+  index.md
+```
+
 `index.md` is untracked. Git can see the file but has not been asked to include it in a commit.
 
 ## 3. Stage the file
@@ -43,6 +51,13 @@ git status
 ```console
 git add index.md
 git status
+```
+
+Relevant output after `git add`:
+
+```text
+Changes to be committed:
+  new file:   index.md
 ```
 
 The staging area contains the snapshot that the next commit will record.
@@ -60,15 +75,29 @@ git commit -m "Introduce the research notes"
 git status
 ```
 
+Example output; your commit hash will differ:
+
+```text
+[main (root-commit) 4235002] Introduce the research notes
+ 1 file changed, 2 insertions(+)
+ create mode 100644 index.md
+```
+
+The following `git status` reports:
+
+```text
+On branch main
+nothing to commit, working tree clean
+```
+
 A useful commit message completes this sentence: "If applied, this commit will..."
 
-## Practical 1: separate changes
+## Practice 1: separate changes
 
 Add this section to `index.md`:
 
 ```markdown
 ## Data
-
 Record the dataset version.
 ```
 
@@ -83,7 +112,6 @@ Now add:
 
 ```markdown
 ## Method
-
 Record the analysis settings.
 ```
 
@@ -91,11 +119,23 @@ Make a second commit:
 
 ```console
 git add index.md
-git commit -m "Document the analysis settings"
+git commit -m "Record the analysis settings"
 git log --oneline
 ```
 
 Checkpoint: the history contains three commits, each with one clear purpose. Press `q` if Git opened the log in a pager.
+
+## What is a commit hash?
+
+Example `git log --oneline` output, newest first:
+
+```text
+3480b70 Record the analysis settings
+966495d Record the dataset version
+4235002 Introduce the research notes
+```
+
+The letters and numbers are short prefixes of commit identifiers. A commit hash is calculated from its recorded content, including the snapshot reference, parent references and metadata such as the author, date and message. Your identifiers will differ from these examples. Use a sufficiently long, unambiguous prefix from your own log wherever an exercise says `HASH`.
 
 ## Working tree, staging area and history
 

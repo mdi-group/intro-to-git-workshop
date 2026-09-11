@@ -14,7 +14,17 @@ For the class exercise, the two remotes have distinct roles:
 | Remote | Points to | Used for |
 | --- | --- | --- |
 | `origin` | your fork | pushing your branches |
-| `upstream` | `mdi-group/intro-to-git-workshop` | receiving workshop updates and opening the final pull request |
+| `upstream` | `mdi-group/intro-to-git-workshop` | fetching workshop updates; this repository is also the PR destination on GitHub |
+
+## Authenticate for HTTPS
+
+```console
+gh auth login
+gh auth setup-git
+gh auth status
+```
+
+Choose GitHub.com, HTTPS and browser sign-in. Confirm that the account shown owns your fork.
 
 ## Fork the workshop repository
 
@@ -24,7 +34,7 @@ If you already have a fork, use it. GitHub may show a **Sync fork** option if it
 
 ## Clone your fork
 
-Replace `YOUR-USERNAME` with your GitHub username:
+Start outside `aichemy-notes`. If you are still inside it, `cd ..` below moves to its parent. If you are already outside it, omit that line. Copy your fork’s **Code → HTTPS** URL, or replace `YOUR-USERNAME` in the example:
 
 ```console
 cd ..
@@ -41,18 +51,29 @@ git remote add upstream https://github.com/mdi-group/intro-to-git-workshop.git
 git remote -v
 ```
 
-Checkpoint:
+## Practice 3: check your fork and clone
+
+Run `git remote -v` and `git status`. Example remote output:
+
+```text
+origin   https://github.com/YOUR-USERNAME/intro-to-git-workshop.git (fetch)
+origin   https://github.com/YOUR-USERNAME/intro-to-git-workshop.git (push)
+upstream https://github.com/mdi-group/intro-to-git-workshop.git (fetch)
+upstream https://github.com/mdi-group/intro-to-git-workshop.git (push)
+```
+
+These URLs have no credentials in them. Checkpoint:
 
 - `origin` contains your username;
 - `upstream` contains `mdi-group`;
 - `git status` reports a clean `main` branch.
 
-## Update local main
+## Fork, clone and branch
 
-```console
-git switch main
-git fetch upstream
-git merge --ff-only upstream/main
-```
+| Term | What it creates | Where it lives |
+| --- | --- | --- |
+| Fork | a hosted repository under your account | GitHub |
+| Clone | a local repository and working files | your laptop |
+| Branch | a movable name pointing to a commit | a repository |
 
-`--ff-only` stops instead of creating an unexpected merge commit when local and upstream histories have diverged.
+Continue to [Branches and pull requests](04-branches-and-pull-requests.md) to explore the commit graph and update local `main` before branching.

@@ -1,6 +1,8 @@
 # Introduction to Git and GitHub
 
-Materials for the AIChemy workshop at the University of Liverpool.
+Materials for the AIChemy × LIV.INNO Data Science School at the University of Liverpool, 14 September 2026.
+
+Delivered by Prakriti Kayastha and Bradley Martin (UCL). Work individually on your own laptop, following the demonstrations.
 
 This repository accompanies the two-hour practical session. The workshop starts with a small local repository, then uses this repository for forks, branches and pull requests.
 
@@ -48,8 +50,9 @@ If both commands print a version, continue to [Before you begin](workshop/00-bef
 5. [Branches and pull requests](workshop/04-branches-and-pull-requests.md)
 6. [Conflicts](workshop/05-conflicts.md)
 7. [Git for research projects](workshop/06-research-projects.md)
+8. [Recap](workshop/07-recap.md)
 
-Keep the [command reference](workshop/command-reference.md) and [troubleshooting guide](workshop/troubleshooting.md) open during the practicals.
+Keep the [command reference](workshop/cheatsheet.md) and [troubleshooting guide](workshop/troubleshooting.md) open during the practicals.
 
 ## Class pull-request exercise
 
@@ -69,7 +72,7 @@ The workshop slides are available in [Intro to Git and GitHub](https://docs.goog
 
 ## Facilitators
 
-Preparation notes, checkpoints and the controlled conflict demonstration are under [`facilitator/`](facilitator/README.md).
+Preparation notes, checkpoints and the controlled conflict demonstration are under [`facilitator/`](facilitator/README.md). The [slide-to-repo map](facilitator/slide-map.md) records the matching practicals and expected states.
 
 ## Licence and acknowledgements
 

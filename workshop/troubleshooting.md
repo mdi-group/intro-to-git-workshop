@@ -67,6 +67,18 @@ git push -u origin participant/YOUR-USERNAME
 
 Do not force-push to `main`.
 
+## Detached HEAD after inspecting history
+
+If you only inspected the old snapshot and made no edits, run `git checkout main`. If you started new work there, create a branch with `git switch -c saved-work` before leaving and ask a facilitator to help preserve it.
+
+## Participant branch or file already exists
+
+You may already have completed part of the exercise. Inspect `git branch`, `git status` and the existing file before creating anything. Reuse your own unfinished branch when appropriate; do not overwrite another participant’s work.
+
+## Fast-forward update refused
+
+Local `main` and workshop `main` may have different commits. Keep both histories and ask a facilitator to inspect them. Do not force-push or reset to make the message disappear.
+
 ## Git opened a pager
 
 Press `q` to return to the terminal.

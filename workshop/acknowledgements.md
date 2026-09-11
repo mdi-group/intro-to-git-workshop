@@ -8,7 +8,7 @@ Other examples and extensions were informed by:
 - [Learn Git Branching](https://learngitbranching.js.org/)
 - [k-gregor/git-workshop](https://github.com/k-gregor/git-workshop)
 - [Git Workshop on Read the Docs](https://git-workshop.readthedocs.io/es/latest/)
-- [Git documentation](https://git-scm.com/docs)
+- [Git documentation](https://git-scm.com/docs), including [restore](https://git-scm.com/docs/git-restore) and [merge](https://git-scm.com/docs/git-merge)
 - [GitHub documentation](https://docs.github.com/)
 
 Useful next topics include tags and releases, Git Large File Storage, automated tests, protected branches and repository-specific contribution rules.

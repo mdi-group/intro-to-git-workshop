@@ -19,7 +19,7 @@ Do not give every participant direct write access. The fork workflow works with 
 ### Local Git
 
 - `git status` reports `main`;
-- `git log --oneline` contains three focused commits after Practical 1;
+- `git log --oneline` contains three focused commits after Practice 1;
 - learners can distinguish `git diff` from `git diff --staged`;
 - `git show HEAD:index.md` displays committed content.
 
@@ -46,7 +46,11 @@ Open several pull requests and inspect:
 - whether the change matches the exercise;
 - how a new pushed commit updates an open pull request.
 
-Merge a selection, then let learners update local `main` and delete the completed local branch.
+Use **Create a merge commit**, if enabled, when explaining the two-parent diagram. If the repository requires squash or rebase, explain that the diagram shows a different merge strategy.
+
+Merge a selection, then let those learners update local `main` and inspect their merged file. Keep branches during class; deletion is optional afterwards and can be refused after a squash merge.
+
+Use the [slide-to-repo map](slide-map.md) to keep the four practice checkpoints aligned. The conflicts section is a presenter demonstration; learners do not edit the shared conflict file.
 
 ## Fallbacks
 

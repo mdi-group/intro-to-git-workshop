@@ -18,6 +18,8 @@
 | `git diff --staged` | compare the staging area with the latest commit |
 | `git commit -m "Message"` | record the staged snapshot |
 | `git log --oneline` | show compact history |
+| `git show HASH^:FILE` | show a file from the selected commit’s first parent |
+| `git checkout --detach HASH` | inspect a past snapshot; start clean, return with `git checkout main` |
 | `git show HASH` | show one commit |
 | `git show HEAD:FILE` | show a file from the latest commit |
 
@@ -25,6 +27,8 @@
 
 | Command | Purpose |
 | --- | --- |
+| `git branch` | list local branches; `*` marks the current one |
+| `git switch -` | return to the previous branch |
 | `git branch --show-current` | print the current branch |
 | `git switch -c NAME` | create and switch to a branch |
 | `git switch NAME` | switch to an existing branch |
@@ -48,6 +52,6 @@
 | Command | Purpose |
 | --- | --- |
 | `git restore --staged FILE` | unstage a file while keeping the saved edit |
-| `git restore FILE` | discard unstaged edits to a file |
+| `git restore FILE` | restore saved content from the staging area, discarding unstaged edits |
 | `git revert HASH` | record a new commit that reverses an earlier commit |
 | `git merge --abort` | stop an unresolved merge and return to the pre-merge state |

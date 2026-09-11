@@ -11,6 +11,8 @@ gh --version
 
 Open a plain-text editor and sign in to your GitHub account in a browser.
 
+The class configures commit identity after creating the local repository, then authenticates when the GitHub section begins. These checks can also be completed in advance.
+
 ## Configure your commit identity
 
 Use your own name and email address:
