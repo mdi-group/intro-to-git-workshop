@@ -1,1 +1,1 @@
-Workshop mode: merging.
+Workshop mode: reviewing and merging.
