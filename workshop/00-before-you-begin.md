@@ -9,6 +9,13 @@ git --version
 gh --version
 ```
 
+If either command reports that it cannot be found, install the missing tool:
+
+- [Git](https://git-scm.com/downloads)
+- [GitHub CLI (`gh`)](https://cli.github.com/)
+
+On Windows, install Git for Windows and GitHub CLI, then reopen Git Bash. Run both version checks again after installing them.
+
 Open a plain-text editor and sign in to your GitHub account in a browser.
 
 Configure your commit identity after creating the local repository. Authenticate when the GitHub section begins. You can also complete these checks before the tutorial.
