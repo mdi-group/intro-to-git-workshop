@@ -1,1 +1,1 @@
-Workshop mode: open.
+Workshop mode: merging.
