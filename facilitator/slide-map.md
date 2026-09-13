@@ -11,7 +11,7 @@ This page maps [Intro to Git and GitHub](https://docs.google.com/presentation/d/
 | 13 | Practice 1: two further focused commits | [Practice 1](../workshop/01-local-version-control.md#practice-1-separate-changes) |
 | 14 | Commit identifiers and example log | [Commit hashes](../workshop/01-local-version-control.md#what-is-a-commit-hash) |
 | 15–18 | Data-source edit, draft/ready state, Practice 2 | [Inspect and recover](../workshop/02-inspect-and-recover.md) |
-| 19–21 | Read old versions, checkout, selective recovery | [Inspect and recover](../workshop/02-inspect-and-recover.md) |
+| 19–21 | Read old versions, checkout, restore and revert | [Inspect and recover](../workshop/02-inspect-and-recover.md) |
 | 22 | Pause | No task or timed activity |
 | 23–28 | Push concept, authentication, fork, clone, remotes, Practice 3 | [GitHub and remotes](../workshop/03-github-and-remotes.md) |
 | 29–34 | Update main, branch, unique file, switching, push, merge graph | [Branches and pull requests](../workshop/04-branches-and-pull-requests.md) |

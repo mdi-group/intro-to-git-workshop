@@ -53,5 +53,8 @@
 | --- | --- |
 | `git restore --staged FILE` | unstage a file while keeping the saved edit |
 | `git restore FILE` | restore saved content from the staging area, discarding unstaged edits |
+| `git restore --source HASH -- FILE` | restore a file from another commit into the working tree |
 | `git revert HASH` | record a new commit that reverses an earlier commit |
+| `git revert --continue` | continue a revert after resolving conflicts |
+| `git revert --abort` | cancel an unresolved revert |
 | `git merge --abort` | stop an unresolved merge and return to the pre-merge state |
