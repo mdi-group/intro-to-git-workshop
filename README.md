@@ -74,6 +74,10 @@ The tutorial slides are available in [Intro to Git and GitHub](https://docs.goog
 
 The controlled-conflict instructions and slide map are in [`facilitator/`](facilitator/README.md).
 
+## Questions and feedback
+
+If you have questions and feedback, email us at `prakriti.kayastha@ucl.ac.uk` and `bradley.martin@ucl.ac.uk`.
+
 ## Licence and acknowledgements
 
 The repository is released under the [MIT licence](LICENSE).
